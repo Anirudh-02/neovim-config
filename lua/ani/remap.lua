@@ -26,4 +26,4 @@ vim.keymap.set("n", "<leader>df", vim.diagnostic.open_float, { desc = 'Open diag
 vim.keymap.set("o", "<C-c>", "<C-g>")
 vim.keymap.set("n", "0", "^")
 vim.keymap.set("n", "^", "0")
-
+vim.keymap.set("t", "<C-q>", "<C-\\><C-n>")
