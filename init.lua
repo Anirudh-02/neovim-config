@@ -564,7 +564,7 @@ end, { desc = "Open fugitive (:Git)" })
 
 vim.keymap.set("n", "<leader>ex", function()
 	pcall(function()
-		vim.cmd("Neotree toggle=true")
+		vim.cmd("Neotree reveal toggle=true")
 	end)
 end, { desc = "Open file tree (:Neotree)" })
 
