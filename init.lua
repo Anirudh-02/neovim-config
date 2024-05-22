@@ -371,6 +371,7 @@ local plugins = {
 			"saadparwaiz1/cmp_luasnip",
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-buffer",
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -542,8 +543,8 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
-vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300
+vim.opt.updatetime = 150
+vim.opt.timeoutlen = 500
 -- Configure how new splits should be opened
 vim.opt.splitright = true
 -- Sets how neovim will display certain whitespace characters in the editor.
@@ -551,7 +552,6 @@ vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣", lead = "·" }
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = "split"
-vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.hlsearch = false
 vim.opt.tabstop = 2
